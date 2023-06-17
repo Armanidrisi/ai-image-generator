@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "scripts": {
+    "tailwind": "tailwindcss -i ./static/css/input.css -o ./static/css/styles.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.3"
+  }
+}

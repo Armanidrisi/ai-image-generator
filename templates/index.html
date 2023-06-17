@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Ai image generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/styles.css')}}"
+      type="text/css"
+      media="all"
+    />
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+  </head>
+  <body>
+    <nav class="bg-white shadow-md p-4">
+      <div class="container mx-auto flex items-center justify-between">
+        <a href="#" class="text-gray-800 font-bold text-xl">AI image</a>
+      </div>
+    </nav>
+    <div class="container px-5 py-8 mx-auto">
+      <div
+        class="flex flex-col justify-center items-center bg-white shadow-lg rounded-lg mb-3"
+      >
+        <div class="w-full sm:w-1/2 p-4">
+          <textarea
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            rows="4"
+            id="textinput"
+            placeholder="Enter text eg: A camel drinking water with bottle"
+          ></textarea>
+        </div>
+        <div class="w-full sm:w-1/2 p-4 flex items-center justify-center">
+          <button
+            class="w-40 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            id="submit"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+      <div class="my-6">
+        <h1 class="text-gray-700 font-semibold text-2xl">Results</h1>
+      </div>
+      <h1 class="text-center text-xl font-bold" id="msg">
+        Result will show here
+      </h1>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="images"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
