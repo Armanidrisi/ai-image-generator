@@ -6,11 +6,11 @@ A web application that generates AI-powered images using Flask and the OpenAI AP
 
 ## 🚀 Features
 
-✨ Generate unique and creative images using artificial intelligence.
-✨ Easy-to-use web interface to interact with the AI image generation model.
-✨ Seamless integration of Flask framework for backend development.
-✨ Powered by the OpenAI API to leverage state-of-the-art AI algorithms.
-✨ Fast and efficient image generation with real-time results.
+- ✨ Generate unique and creative images using artificial intelligence.
+- ✨ Easy-to-use web interface to interact with the AI image generation model.
+- ✨ Seamless integration of Flask framework for backend development.
+- ✨ Powered by the OpenAI API to leverage state-of-the-art AI algorithms.
+- ✨ Fast and efficient image generation with real-time results.
 
 ## 🛠️ Installation
 
